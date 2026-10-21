@@ -1,6 +1,6 @@
 # LabPoo2
 
-Mi parte se compone de 5 archivos/clases q son todos lo relacionado con los repositorios y ultimo una clase utilitaria
+Nicolas: Mi parte se compone de 5 archivos/clases q son todos lo relacionado con los repositorios y ultimo una clase utilitaria
 un repositorio es una clase que se encarga de guardar y buscar un tipo de datos, basicamente el almacen
 
 Lo que hace es guardar objetos, buscarlos por [src](src)su identificador y con metodos podemos guardar, buscar, eliminar y cosas asi
@@ -20,6 +20,8 @@ brevemente pondre q hace guarda cada clase:
 - UtilProductos: no guarda nada, solo tiene metodos con wildcards para sumar precios, buscar el mas caro, imprimir y copiar listas de productos
 
 para que quede mas claro el uso de wildcards estos se usan solo en donde un metodo recibe una coleccion de tipos con subtipos o supertipos ahi usando extends/super con limite superior/inferior
+
+
 Samuel Garcia: clase abstracta producto, comparte atributos comunes con sus hijas, asi no tengo que volver a escribir el equasl y el hashcode.
 combo tiene por dentro una lista de productos (List<Producto>). Le sobrescribí el método getPrecio() para que sume el precio de todos los productos que contiene y le aplique su descuento de forma automática
 combo tiene el getItems() en luagr de pasar la original devuleve una copia
