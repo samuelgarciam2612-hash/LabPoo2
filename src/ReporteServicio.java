@@ -35,7 +35,7 @@ public class ReporteServicio {
                 .filter(p -> p.getSede() != null && p.getSede().getNombre() != null)
                 .collect(Collectors.groupingBy(
                         pedido -> pedido.getSede().getNombre(),
-                        Collectors.summingDouble(Pedido::getTotal)
+                        Collectors.summingDouble(Pedido::calcularTotal)
                 ));
     }
 
@@ -48,6 +48,6 @@ public class ReporteServicio {
                 .filter(Objects::nonNull)
                 .filter(pedido -> pedido.getCliente() != null &&
                         documentoCliente.equals(pedido.getCliente().getDocumento()))
-                .max(Comparator.comparing(Pedido::getTotal));
+                .max(Comparator.comparing(Pedido::calcularTotal));
     }
 }
