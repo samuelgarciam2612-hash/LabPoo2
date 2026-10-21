@@ -14,3 +14,4 @@ y calculó el total exacto. Para probar que el encapsulamiento de `Combo` está 
 investigué y utilicé el método nativo `.clear()` de Java sobre la lista que retorna `getItems()`. 
 Al verificar el tamaño con `size()`, los productos que tiene el combo seguían completos, demostrando que `getItems()` devuelve una copia y que la lista original, 
 que no peude ser manipualda desde afuera.
+
