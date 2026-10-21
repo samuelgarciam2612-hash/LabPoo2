@@ -10,4 +10,7 @@ tenemos un control de duplicados en Cliente y en el Repartirdor solo con el id
 En el main se hace una prueba de todo, de los clienetes que no tengan duplicados.
 se creo instancias de `Plato` y `Bebida`, las agrupé dentro de un `Combo` con 15% de descuento, y luego agregué
 tanto platos individuales como el combo a un `Pedido`. El pedido procesó todos los elementos como `Producto` sin problemas de compatibilidad 
-y calculó el total exacto
+y calculó el total exacto. Para probar que el encapsulamiento de `Combo` está protegido, 
+investigué y utilicé el método nativo `.clear()` de Java sobre la lista que retorna `getItems()`. 
+Al verificar el tamaño con `size()`, los productos que tiene el combo seguían completos, demostrando que `getItems()` devuelve una copia y que la lista original, 
+que no peude ser manipualda desde afuera.
