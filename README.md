@@ -1,1 +1,22 @@
 # LabPoo2
+
+Mi parte se compone de 5 archivos/clases q son todos lo relacionado con los repositorios y ultimo una clase utilitaria
+un repositorio es una clase que se encarga de guardar y buscar un tipo de datos, basicamente el almacen
+
+Lo que hace es guardar objetos, buscarlos por [src](src)su identificador y con metodos podemos guardar, buscar, eliminar y cosas asi
+y en vez de repetir la misma logica 4 veces los genericos heredan de la primera clase llamada repositorio
+
+ya por ultimo hay una clase de utilidades al final q es muy importante porque en vez de las otras q guardan datos esta no guarda nada
+lo unico q hace es procesar esas listas q el codigo continuamente le esta pasando
+
+Por esa misma razon sus metodos son static y es constructor privado no hay necesidad de crearla de otra forma
+
+brevemente pondre q hace guarda cada clase:
+
+- Repositorio: es la clase base y generica, tiene el HashMap y los metodos de guardar, buscar, eliminar y listar. las otras heredan de esta
+- Repositorioclientes: guarda los clientes y no deja repetidos porque usa un HashSet que compara por documento
+- Repositorioproductos: guarda el menu (platos, bebidas y combos) y tiene un metodo con wildcard para agregar varios a la vez
+- RepositorioPedidos: guarda los pedidos y casi todo lo hereda del repositorio general
+- UtilProductos: no guarda nada, solo tiene metodos con wildcards para sumar precios, buscar el mas caro, imprimir y copiar listas de productos
+
+para que quede mas claro el uso de wildcards estos se usan solo en donde un metodo recibe una coleccion de tipos con subtipos o supertipos ahi usando extends/super con limite superior/inferior
