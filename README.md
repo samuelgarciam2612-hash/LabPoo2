@@ -6,3 +6,8 @@ aplique herencia y polimorfismo en la clase abstracta,
 el calculo de los productos funcionan con todos sin tener que crear metodos repetidos
 use colecciones para guardar los items
 tenemos un control de duplicados en Cliente y en el Repartirdor solo con el id
+
+En el main se hace una prueba de todo, de los clienetes que no tengan duplicados.
+se creo instancias de `Plato` y `Bebida`, las agrupé dentro de un `Combo` con 15% de descuento, y luego agregué
+tanto platos individuales como el combo a un `Pedido`. El pedido procesó todos los elementos como `Producto` sin problemas de compatibilidad 
+y calculó el total exacto
