@@ -14,4 +14,4 @@ public class Cocina implements ObservadorPedido {
             System.out.println("[COCINA] Pedido " + pedido.getId() + " ahora está: " + nuevoEstado);
         }
     }
-}
+    }

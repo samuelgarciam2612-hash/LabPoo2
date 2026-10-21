@@ -19,4 +19,4 @@ public class DescuentoPorcentaje implements EstrategiaPromocion {
     public String getDescripcion() {
         return "Descuento del " + porcentaje + "%";
     }
-}
+    }

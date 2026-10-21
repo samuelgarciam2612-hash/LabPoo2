@@ -13,4 +13,4 @@ public class SinPromocion implements EstrategiaPromocion {
     public String getDescripcion() {
         return "Sin promoción";
     }
-}
+    }

@@ -12,4 +12,4 @@ public class Repartidor implements ObservadorPedido {
                     + pedido.getId() + " ahora está: " + nuevoEstado);
         }
     }
-}
+    }

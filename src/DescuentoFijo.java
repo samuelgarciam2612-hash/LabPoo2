@@ -19,4 +19,4 @@ public class DescuentoFijo implements EstrategiaPromocion {
     public String getDescripcion() {
         return "Descuento fijo de $" + monto;
     }
-}
+    }
