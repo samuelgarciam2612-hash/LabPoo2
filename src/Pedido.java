@@ -83,4 +83,3 @@ public class Pedido {
                 " - Estado: " + estado;
     }
 }
-}
