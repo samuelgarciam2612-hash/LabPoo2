@@ -1,8 +1,6 @@
-import modelo.Producto;
 import java.util.Collection;
 import java.util.Optional;
 
-// se cumple la condicion 5 aca
 public class UtilProductos {
 
     // solo tiene metodos static entonces no hace falta crear objetos

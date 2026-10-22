@@ -1,5 +1,3 @@
-import modelo.Producto;
-
 import java.util.Collection;
 import java.util.Optional;
 
